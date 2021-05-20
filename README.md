@@ -8,14 +8,21 @@ The original thread: https://www.reddit.com/r/AskReddit/comments/mx0pwd/what_mov
 # How It's Made:
 **Tech used:** HTML, CSS, JavaScript
 
-**Other Technologies:** Pushshift API
+**Other Technologies:** Pushshift API, SpaCy
+
+
+# DevLog
+#### May 19, 2021
+So far I was doing a lot of testing to see if it was plausable and come up with an approach to the problem. In summary, I used the [Pushshift API](https://pushshift.io/) to get all the comments from the thread. With a subset, I used [SpaCy](https://spacy.io/) to train an AI to extract the movie titles from the comments' text. It didn't work out so well. 
+
+I'd followed [a tutorial that did it with "aircraft"](https://towardsdatascience.com/using-spacy-3-0-to-build-a-custom-ner-model-c9256bea098) and only had 11 examples. I thought I could get away with 30 examples, but I more than likely need more -- especially since there are about 45,000 comments. It also seems like I'm getting more than just the top-level comments (ie. replies to top-level comments). 
+
+
+<!-- # Optimizations
+
 
  
-# Optimizations
-
-
- 
-# Lessons Learned:
+# Lessons Learned: -->
  
 
  
