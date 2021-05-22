@@ -1,0 +1,1 @@
+inputFile = open('comment_info_response.json', 'r')
