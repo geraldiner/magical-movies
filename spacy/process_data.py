@@ -106,6 +106,102 @@ search = [
     ["Big Fish"],
     ["The craft"],
     ["Jumanji"],
+    [
+        "The Black Stallion",
+        "The Sound of Music",
+        "Pride & Prejudice",
+        "Princess Mononoke",
+        "Seven Samurai",
+    ],
+    ["The Goonies"],
+    ["Blues Brothers"],
+    ["Mary Poppins"],
+    ["Now and Then"],
+    ["Fantasia"],
+    ["Jurassic Park"],
+    ["Clue"],
+    ["Singin in the rain"],
+    ["Room"],
+    ["Notting Hill", "Pretty Woman"],
+    ["Perfume: The Story of a Murderer"],
+    ["Howls Moving castle"],
+    ["eurotrip"],
+    ["The Dark Crystal"],
+    ["The Fifth Element"],
+    ["V for Vendetta"],
+    ["Stardust"],
+    ["Shawshank Redemption"],
+    ["Almost Famous"],
+    ["Stargate"],
+    ["The Brave Little Toaster"],
+    ["Lord of the Rings"],
+    ["Coraline"],
+    ["Field of Dreams"],
+    ["The Grand Budapest Hotel"],
+    ["The Mask"],
+    ["Best in Show"],
+    ["Dune"],
+    ["Knight's Tale"],
+    ["Clueless"],
+    ["Holes"],
+    ["Clerks"],
+    ["Forrest Gump"],
+    ["The Matrix"],
+    ["Dogma"],
+    ["Children of men", "Last of the Mohicans", "Mars Attacks"],
+    ["A Silent Voice"],
+    ["Dead Poets Society"],
+    ["Dark Crystal"],
+    ["Seven Brides for Seven Brothers"],
+    ["Dazed and Confused"],
+    ["The Secret of Kells"],
+    ["Grave of the fireflies"],
+    ["Toy story 2", "zootopia"],
+    ["Thumbelina"],
+    ["The thing"],
+    ["The fifth element"],
+    ["To Wong Foo, Thanks For Everything!"],
+    ["Legend"],
+    ["Harold and Maude"],
+    ["Return to Oz"],
+    ["E.T.", "Eternal sunshine of the spotless mind"],
+    ["Mrs Doubtfire"],
+    ["How to train your dragon"],
+    ["Smokey and the Bandit"],
+    ["Independence Day"],
+    ["The Mummy"],
+    ["Waking Life"],
+    ["House of Flying Daggers"],
+    ["A Beautiful Mind"],
+    ["Across the Universe"],
+    ["Lion King"],
+    ["What Dreams May Come"],
+    ["The Usual Suspects"],
+    ["The Big Lebowski"],
+    ["Into the SpiderVerse"],
+    ["The Martian"],
+    ["History of the World", "Spaceballs"],
+    ["Beetlejuice"],
+    ["The Cat From Outer Space"],
+    ["The Nightmare Before Christmas"],
+    ["Big Fish", "Eternal Sunshine of the Spotless Mind"],
+    ["Secondhand Lions"],
+    ["Twister"],
+    ["Big Fish"],
+    ["Hot Fuzz"],
+    ["Superbad"],
+    ["HOCUS POCUS"],
+    ["Fern Gully"],
+    ["Princess Mononoke"],
+    ["Charlotte's Web"],
+    ["Lion king", "Mulan"],
+    ["50 First Dates"],
+    ["Spirited away"],
+    ["The Chronicles of Narnia"],
+    ["Lost in Translation"],
+    ["Shawshank Redemption", "Forrest Gump"],
+    ["The Fountain"],
+    ["The Secret Life of Walter Mitty"],
 ]
 
 
@@ -114,24 +210,37 @@ def find_movies_in_comments(dataset, searchset, comments):
         text = comments[i]["body"]
         searchText = searchset[i]
         value = {"entities": []}
+        # print("text: " + text)
         for x in searchText:
+            # print("\t searching for: " + x)
             start = text.index(x)
             wordLength = len(x)
             value["entities"].append((start, start + wordLength, "movie"))
         dataset.append((text, value))
 
 
-# print(TRAINING_DATA)
-# outputFile = open("training_data.py", "a", encoding="utf-8")
-# outputFile.write(str(DATA))
-# outputFile.close()
-
-
 # Function calls
-TRAINING_DATA = []
+TRAINING_DATA = [
+    ("It's only getting better as the years pass!", {"entities": []}),
+    (
+        "That movie really is something else. It's funny, sad, exciting, sad, filled with action, sad, great music as well! Magical. I cry everytime.",
+        {"entities": []},
+    ),
+    (
+        "It's really cool when movies get to you even though they're about something you're not really into!",
+        {"entities": []},
+    ),
+    ('"Death is a disease."', {"entities": []}),
+    ("To each his own! :D", {"entities": []}),
+    ("Yeah that one really is magical!", {"entities": []}),
+    ("I love that one as well!", {"entities": []}),
+    ("Brief nudity warning", {"entities": []}),
+    ("Fuck yes. Have me nightmares as a kid but I love it so much", {"entities": []}),
+]
+
 find_movies_in_comments(TRAINING_DATA, search, comments)
-# print(TRAINING_DATA)
-with open("training_data_100.py", "a", encoding="utf-8") as outputFile:
+# print(len(TRAINING_DATA))
+with open("training_data_500.py", "a", encoding="utf-8") as outputFile:
     outputFile.write(str(TRAINING_DATA))
 outputFile.close()
 

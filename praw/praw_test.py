@@ -8,7 +8,7 @@ import json
 
 import praw_comment_ids
 
-comment_ids = praw_comment_ids.comment_ids
+comment_ids = praw_comment_ids.comment_ids_part3
 
 # Set up Reddit instance
 reddit = praw.Reddit(
@@ -47,14 +47,14 @@ def write_comment_ids():
     outputFile.close()
 
 
-def get_comment_info(comment_id):
+def get_comment_info(comment_id, output):
     comment = reddit.comment(id=comment_id)
     author_info = {"name": "", "avatar": ""}
 
     try:
         author_info = get_author_info(comment.author)
     except:
-        print(comment_id)
+        output.write(comment_id + "\n")
 
     comment.refresh()
     comment.replies.replace_more(limit=None)
@@ -91,11 +91,13 @@ def get_comment_replies(repliesList):
 
 
 # Function calls
-outputFile = open("praw_comments.json", "w", encoding="utf-8")
+skippedFile = open("skipped_comments.py", "a")
+outputFile = open("praw_comments_part3.json", "w", encoding="utf-8")
 outputFile.write("[")
 for comment in comment_ids:
-    com = get_comment_info(comment)
+    com = get_comment_info(comment, skippedFile)
     outputFile.write(json.dumps(com) + ",")
 
 outputFile.write("]")
 outputFile.close()
+skippedFile.close()
