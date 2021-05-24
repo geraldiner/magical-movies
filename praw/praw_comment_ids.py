@@ -12673,7 +12673,10 @@ comment_ids_part4 = [
     "gvmkyqz",
     "gvmkyrb",
     "gvmkysp",
-    "gvmkyvx",
+    "gvmkyvx"
+]
+
+comment_ids_part5 = [
     "gvmkz0z",
     "gvmkz1v",
     "gvmkz3r",

@@ -125,7 +125,7 @@ venv.bak/
 dmypy.json
 
 # Misc
-config/config.env
+config/
 design
 process
 plan.txt

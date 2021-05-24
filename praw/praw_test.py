@@ -8,7 +8,7 @@ import json
 
 import praw_comment_ids
 
-comment_ids = praw_comment_ids.comment_ids_part4
+comment_ids = praw_comment_ids.comment_ids_part5
 
 # Set up Reddit instance
 reddit = praw.Reddit(
@@ -92,7 +92,7 @@ def get_comment_replies(repliesList):
 
 # Function calls
 skippedFile = open("skipped_comments.py", "a")
-outputFile = open("praw_comments_part4.json", "w", encoding="utf-8")
+outputFile = open("praw_comments_part5.json", "w", encoding="utf-8")
 outputFile.write("[")
 for comment in comment_ids:
     com = get_comment_info(comment, skippedFile)
