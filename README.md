@@ -1,22 +1,200 @@
-# Magical Movies as Picked by Reddit
+# Where's the Magic?
 
-Getting information about the most magical movies as picked by Reddit. (Hopefully part of a larger project to watch these movies and rate them on a 'magic' scale.
+Finding the magic in movies as picked by Reddit.
 
-The original thread: https://www.reddit.com/r/AskReddit/comments/mx0pwd/what_movie_is_simply_magical_to_you_no_matter_how/
+<br>
+<blockquote>What movie is simply magical to you, no matter how popular or unpopular it may be?
+
+[See original thread on Reddit](https://www.reddit.com/r/AskReddit/comments/mx0pwd/what_movie_is_simply_magical_to_you_no_matter_how/)
+
+</blockquote>
+</br>
+
+People are one of my passions - I like to know about them and their lives. For this project, I'm picking out these so-called "magical" movies and displaying them with their information from a movie database. Afterwards, I'd like to watch the top 100 or so and see if the magic is really there for me.
 
 **Link to project:** https://github.com/geraldiner/magical-movies
 
 # How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech used:** HTML, CSS, JavaScript, Python
 
-**Other Technologies:** Pushshift API, SpaCy
+**Other Technologies:** RPAW, Reddit API, Pushshift API, SpaCy
 
 # To Do
 
+### Data Collection
+
 - [ ] Get all the comments+data from Reddit
+  - Still going 3 days in...
 - [ ] Process some test cases to train AI => build training set
+  - Compiled a set of 200 comments and the movie within the comment. Later I learned that I needed some false cases to help make it work better.
 - [ ] Train AI on training set
+  - Tried it with 200 comments and it seems to work OK
+- [ ] Run the AI on the rest of the comments to find all the movies
+- [ ] Aggregate duplicates together and add their scores/upvotes together (since some movies are mentioned multiple times in their own comment)
+
+### Build My Database
+
+- [ ] Fetch information about movies for every movie found from the Reddit thread
+
+**Movie**
+
+- Title
+- Year
+
+## Results from Training the AI
+
+<table >
+<tr valign="top">
+<th>Movies to be Found</th>
+<th>Training on 150</th>
+<th>Training on 200</th>
+</tr>
+<tr valign="top">
+<td>
+#1
+
+- Anastasia
+
+#2
+
+- Coming to America
+
+#3
+
+- Lock Stock & 2 Smoking Barrels
+
+#4
+
+- Garden State
+
+#5
+
+- Zootopia
+
+#6
+
+- The Color Purple
+
+#7
+
+- Spirited Away
+
+#8
+
+- Scream
+
+#9
+
+- Your Name
+
+#10
+
+- Excalibur
+
+</td>
+<td>
+#1
+
+- Anastasia
+
+#2
+
+- Coming to America
+
+#3
+
+- Lock Stock & 2 Smoking Barrels
+
+#4
+
+- Garden State
+
+#5
+
+- Zootopia
+
+#6
+
+- The Color Purple
+- Whoopi Goldberg
+- Danny Glover
+- Akosua Busia
+
+#7
+
+- Spirited Away
+
+#8
+
+- Scream
+
+#9
+
+- Your Name - the music
+
+#10
+
+- Sir Thomas Mallory
+- Arthur
+- King Arthur
+- Lady Genevieve
+- Charm of Making
+- Helen Mirren
+- Ever
+</td>
+<td>
+#1
+- Anastasia
+
+#2
+
+- Coming to America
+
+#3
+
+- Lock Stock
+- Smoking Barrels
+
+#4
+
+- Garden State
+
+#5
+
+- Zootopia
+
+#6
+
+- The Color Purple
+- Whoopi Goldberg
+- Danny Glover
+- Margaret Avery
+- Akosua Busia
+
+#7
+
+- Spirited Away
+
+#8
+
+- Scream
+
+#9
+
+- Your Name
+
+#10
+
+- Sir Thomas Mallory
+- The Death of Arthur
+- King Arthur
+- Lady Genevieve
+- Charm of Making
+- Dame Helen Mirren
+</td>
+</tr>
+</table>
 
 # DevLog
 
