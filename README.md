@@ -51,7 +51,7 @@ People are one of my passions - I like to know about them and their lives. For t
 <th>Training on 200</th>
 </tr>
 <tr valign="top">
-<td>
+<td width="33%">
 #1
 
 - Anastasia
@@ -93,7 +93,7 @@ People are one of my passions - I like to know about them and their lives. For t
 - Excalibur
 
 </td>
-<td>
+<td width="33%">
 #1
 
 - Anastasia
@@ -143,7 +143,7 @@ People are one of my passions - I like to know about them and their lives. For t
 - Helen Mirren
 - Ever
 </td>
-<td>
+<td width="33%">
 #1
 
 - Anastasia
