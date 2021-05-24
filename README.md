@@ -39,8 +39,24 @@ People are one of my passions - I like to know about them and their lives. For t
 
 **Movie**
 
+Probably from [The Movie Database](https://themoviedb.org) so I won't get rate-limited. They offer:
+
 - Title
-- Year
+- Genre
+- Overview
+- Popularity
+- Poster Image Link
+- Release Date
+- Vote Average
+- Vote Count
+
+In addition to this, I will also add the information from the top-level Reddit comment(s) that have mentioned it, including:
+
+- Author Name
+- Author Profile Pic
+- Body
+- Permalink
+- Upvote Score
 
 # DevLog
 
