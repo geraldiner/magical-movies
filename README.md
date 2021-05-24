@@ -145,6 +145,7 @@ People are one of my passions - I like to know about them and their lives. For t
 </td>
 <td>
 #1
+
 - Anastasia
 
 #2
