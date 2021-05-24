@@ -12673,7 +12673,7 @@ comment_ids_part4 = [
     "gvmkyqz",
     "gvmkyrb",
     "gvmkysp",
-    "gvmkyvx"
+    "gvmkyvx",
 ]
 
 comment_ids_part5 = [
@@ -14933,6 +14933,9 @@ comment_ids_part5 = [
     "gvmrf5d",
     "gvmrf94",
     "gvmrfj4",
+]
+
+comment_ids_part6 = [
     "gvmrfn5",
     "gvmrfs8",
     "gvmrfzt",
@@ -40932,4 +40935,4 @@ comment_ids_part5 = [
     "gwigl00",
 ]
 
-# print(len(comment_ids_part4))
+# print(len(comment_ids_part6))

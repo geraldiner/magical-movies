@@ -42,11 +42,11 @@ People are one of my passions - I like to know about them and their lives. For t
 - Title
 - Year
 
-<!-- # Optimizations
+# DevLog
 
-
-
-# Lessons Learned: -->
+- [May 23, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-23.md)
+- [May 20, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-20.md)
+- [May 19, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-19.md)
 
 # Other Projects:
 

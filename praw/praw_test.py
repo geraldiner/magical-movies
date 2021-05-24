@@ -92,7 +92,7 @@ def get_comment_replies(repliesList):
 
 # Function calls
 skippedFile = open("skipped_comments.py", "a")
-outputFile = open("praw_comments_part5.json", "w", encoding="utf-8")
+outputFile = open("praw_comments_part6.json", "w", encoding="utf-8")
 outputFile.write("[")
 for comment in comment_ids:
     com = get_comment_info(comment, skippedFile)
