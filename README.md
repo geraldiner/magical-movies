@@ -18,7 +18,7 @@ People are one of my passions - I like to know about them and their lives. For t
 
 **Tech used:** HTML, CSS, JavaScript, Python
 
-**Other Technologies:** RPAW, Reddit API, Pushshift API, SpaCy
+**Other Technologies:** PRAW, Reddit API, Pushshift API, SpaCy
 
 # To Do
 
@@ -60,8 +60,8 @@ In addition to this, I will also add the information from the top-level Reddit c
 
 # DevLog
 
-- [May 23, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-23.md)
 - [May 26, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-26.md)
+- [May 23, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-23.md)
 - [May 20, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-20.md)
 - [May 19, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-19.md)
 
