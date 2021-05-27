@@ -1,4 +1,4 @@
-comment_ids = [
+comment_ids_part1 = [
     "gvm1z2k",
     "gvllxqi",
     "gvlssby",
@@ -2574,7 +2574,7 @@ comment_ids = [
     "gvms538",
     "gvms5cn",
 ]
-comment_ids_therest = [
+comment_ids_part2 = [
     "gvms6bd",
     "gvms6c7",
     "gvms6iv",
@@ -5832,7 +5832,7 @@ comment_ids_therest = [
     "gvm4wau",
 ]
 
-comment_ids_more = [
+comment_ids_part3 = [
     "gvm4wf4",
     "gvm4wgn",
     "gvm4wi0",
@@ -6692,7 +6692,7 @@ comment_ids_more = [
     "gvm72b1",
 ]
 # "gvm72cd",
-comment_ids_more_more = [
+comment_ids_part4 = [
     "gvm72do",
     "gvm72fn",
     "gvm72hl",
@@ -6998,7 +6998,7 @@ comment_ids_more_more = [
     "gvm7uou",
 ]
 
-comment_ids_part3 = [
+comment_ids_part5 = [
     "gvm7v00",
     "gvm7v0i",
     "gvm7v59",
@@ -11940,7 +11940,7 @@ comment_ids_part3 = [
 ]
 
 # "gvmj9os",
-comment_ids_part4 = [
+comment_ids_part6 = [
     "gvmj9p7",
     "gvmj9rg",
     "gvmj9sm",
@@ -12676,7 +12676,7 @@ comment_ids_part4 = [
     "gvmkyvx",
 ]
 
-comment_ids_part5 = [
+comment_ids_part7 = [
     "gvmkz0z",
     "gvmkz1v",
     "gvmkz3r",
@@ -14935,7 +14935,7 @@ comment_ids_part5 = [
     "gvmrfj4",
 ]
 
-comment_ids_part6 = [
+comment_ids_part8 = [
     "gvmrfn5",
     "gvmrfs8",
     "gvmrfzt",
@@ -17117,7 +17117,10 @@ comment_ids_part6 = [
     "gvmymt6",
     "gvmymtr",
     "gvmymud",
-    "gvmymxz",
+]
+
+# "gvmymxz",
+comment_ids_part9 = [
     "gvmyn5g",
     "gvmyo0i",
     "gvmyo54",
@@ -17759,7 +17762,10 @@ comment_ids_part6 = [
     "gvn1hpf",
     "gvn1hwz",
     "gvn1i5e",
-    "gvn1i8e",
+]
+
+#    "gvn1i8e",
+comment_ids_part10 = [
     "gvn1ihn",
     "gvn1imj",
     "gvn1j6c",
@@ -18445,7 +18451,10 @@ comment_ids_part6 = [
     "gvn53br",
     "gvn53cj",
     "gvn53ml",
-    "gvn53rn",
+]
+
+# "gvn53rn",
+comment_ids_part11 = [
     "gvn54gd",
     "gvn54w1",
     "gvn54xw",
@@ -18986,6 +18995,9 @@ comment_ids_part6 = [
     "gvn7vyl",
     "gvn7vyo",
     "gvn7vz7",
+]
+
+comment_ids_part12 = [
     "gvn7w1f",
     "gvn7w3q",
     "gvn7w7f",
@@ -19696,7 +19708,11 @@ comment_ids_part6 = [
     "gvnb4hx",
     "gvnb4ni",
     "gvnb4pk",
-    "gvnb597",
+]
+
+# "gvnb597",
+
+comment_ids_part13 = [
     "gvnb5pz",
     "gvnb5tj",
     "gvnb6fr",
@@ -20888,7 +20904,10 @@ comment_ids_part6 = [
     "gvnhcis",
     "gvnhd2c",
     "gvnhdbk",
-    "gvnhddt",
+]
+
+# "gvnhddt",
+comment_ids_part14 = [
     "gvnhdi6",
     "gvnhdl3",
     "gvnhdqp",
@@ -21295,6 +21314,9 @@ comment_ids_part6 = [
     "gvnj9vk",
     "gvnja1a",
     "gvnja8b",
+]
+
+comment_ids_part15 = [
     "gvnja97",
     "gvnja9i",
     "gvnjac5",
@@ -21480,6 +21502,9 @@ comment_ids_part6 = [
     "gvnk6mu",
     "gvnk6nl",
     "gvnk6w7",
+]
+
+comment_ids_part16 = [
     "gvnk6xo",
     "gvnk762",
     "gvnk77e",
@@ -40935,4 +40960,4 @@ comment_ids_part6 = [
     "gwigl00",
 ]
 
-# print(len(comment_ids_part6))
+# print(len(comment_ids_part9))

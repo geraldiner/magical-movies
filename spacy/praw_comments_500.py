@@ -17778,8 +17778,8 @@ comments = [
             "name": "niketyname",
             "avatar": "https://styles.redditmedia.com/t5_18g2kq/styles/profileIcon_snooa96b5c52-f7a1-4b63-b3e4-a375215fc39a-headshot.png?width=256&height=256&crop=256:256,smart&s=07b6173bdb764ca051973c3b0aa969218e81c48e",
         },
-        "body": "Edward Scissorhands. I watch it every Christmas and it\u2019s just so  magical to me. It\u2019s simple but deep, you feel for most of the characters. And just hilarious in the smallest ways. The soundtrack and snow too \ud83d\udc4c\ud83c\udffd",
-        "body_html": '<div class="md"><p>Edward Scissorhands. I watch it every Christmas and it\u2019s just so  magical to me. It\u2019s simple but deep, you feel for most of the characters. And just hilarious in the smallest ways. The soundtrack and snow too \ud83d\udc4c\ud83c\udffd</p>\n</div>',
+        "body": "Edward Scissorhands. I watch it every Christmas and it\u2019s just so  magical to me. It\u2019s simple but deep, you feel for most of the characters. And just hilarious in the smallest ways. The soundtrack and snow too",
+        "body_html": '<div class="md"><p>Edward Scissorhands. I watch it every Christmas and it\u2019s just so  magical to me. It\u2019s simple but deep, you feel for most of the characters. And just hilarious in the smallest ways. The soundtrack and snow too</p>\n</div>',
         "comment_id": "gvlugah",
         "permalink": "/r/AskReddit/comments/mx0pwd/what_movie_is_simply_magical_to_you_no_matter_how/gvlugah/",
         "replies": ["gvmsqgk", "gvmynhl"],
@@ -19886,6 +19886,18 @@ comments = [
     },
     {
         "author": {
+            "name": "incaman88",
+            "avatar": "https://styles.redditmedia.com/t5_clz8x/styles/profileIcon_snooa6bbd2e6-2a3b-4689-aaf3-4bef0abc7419-headshot.png?width=256&height=256&crop=256:256,smart&s=cbbdf57c476406a2b3d3e0990af3a359f44c5815",
+        },
+        "body": "Lock Stock & 2 Smoking Barrels. Fucking love this movie. I can rewatch it in my head, but still sit my ass for 2 hours to watch it. \n\n\u2014Is this some white cunts joke that black cunts don\u2019t get? Cause I\u2019m not fucking laughing NICHOLAS!",
+        "body_html": '<div class="md"><p>Lock Stock &amp; 2 Smoking Barrels. Fucking love this movie. I can rewatch it in my head, but still sit my ass for 2 hours to watch it. </p>\n\n<p>\u2014Is this some white cunts joke that black cunts don\u2019t get? Cause I\u2019m not fucking laughing NICHOLAS!</p>\n</div>',
+        "comment_id": "gvmksrj",
+        "permalink": "/r/AskReddit/comments/mx0pwd/what_movie_is_simply_magical_to_you_no_matter_how/gvmksrj/",
+        "replies": [],
+        "score": 11,
+    },
+    {
+        "author": {
             "name": "MedbGuldb",
             "avatar": "https://styles.redditmedia.com/t5_fe30w/styles/profileIcon_gm3okyfipur41.jpg?width=256&height=256&crop=256:256,smart&s=2bd0aef77d1a651c5fb12c186a9babe84520d9cc",
         },
@@ -20820,18 +20832,6 @@ comments = [
         "body_html": '<div class="md"><p>Coming to America (1988)</p>\n</div>',
         "comment_id": "gvmdg1k",
         "permalink": "/r/AskReddit/comments/mx0pwd/what_movie_is_simply_magical_to_you_no_matter_how/gvmdg1k/",
-        "replies": [],
-        "score": 11,
-    },
-    {
-        "author": {
-            "name": "incaman88",
-            "avatar": "https://styles.redditmedia.com/t5_clz8x/styles/profileIcon_snooa6bbd2e6-2a3b-4689-aaf3-4bef0abc7419-headshot.png?width=256&height=256&crop=256:256,smart&s=cbbdf57c476406a2b3d3e0990af3a359f44c5815",
-        },
-        "body": "Lock Stock & 2 Smoking Barrels. Fucking love this movie. I can rewatch it in my head, but still sit my ass for 2 hours to watch it. \n\n\u2014Is this some white cunts joke that black cunts don\u2019t get? Cause I\u2019m not fucking laughing NICHOLAS!",
-        "body_html": '<div class="md"><p>Lock Stock &amp; 2 Smoking Barrels. Fucking love this movie. I can rewatch it in my head, but still sit my ass for 2 hours to watch it. </p>\n\n<p>\u2014Is this some white cunts joke that black cunts don\u2019t get? Cause I\u2019m not fucking laughing NICHOLAS!</p>\n</div>',
-        "comment_id": "gvmksrj",
-        "permalink": "/r/AskReddit/comments/mx0pwd/what_movie_is_simply_magical_to_you_no_matter_how/gvmksrj/",
         "replies": [],
         "score": 11,
     },

@@ -510,19 +510,15 @@ test_sample = [
     },
 ]
 
-
-# Adventures in Babysitting
-# Smokey and the  Bandit
-# Robin Hood - Prince of Thieves
-# Labyrinth
-# Grease
-# Up
-# Terry Gilliam
-
 print(len(test_sample))
 
-for i in range(0, len(test_sample)):
-    print("#" + str(i))
-    doc = nlp1(test_sample[i]["body"])  # input sample text
-    for entity in doc.ents:
-        print("\t" + entity.label_, " | ", entity.text)
+with open("training_test_result.py", "w") as resultFile:
+    for i in range(0, len(test_sample)):
+        resultFile.write("Test #" + str(i) + "\n")
+        resultFile.write("\ttext | " + test_sample[i]["body"] + "\n")
+        doc = nlp1(test_sample[i]["body"])  # input sample text
+        for entity in doc.ents:
+            resultFile.write("\t" + entity.label_ + " | " + entity.text + "\n")
+        resultFile.write("\n----------\n")
+
+resultFile.close()
