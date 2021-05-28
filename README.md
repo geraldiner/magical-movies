@@ -24,12 +24,12 @@ People are one of my passions - I like to know about them and their lives. For t
 
 ### Data Collection
 
-- [ ] Get all the comments+data from Reddit
-  - Still going 3 days in...
+- [x] Get all the comments+data from Reddit
+  - FINALLY DONE - May 27, 2021 - That's a lot of data man.
 - [ ] Process some test cases to train AI => build training set
   - Compiled a set of 200 comments and the movie within the comment. Later I learned that I needed some false cases to help make it work better.
 - [ ] Train AI on training set
-  - Tried it with 200 comments and it seems to work OK
+  - Tried it with 300 comments and it seems to work OK (See results: [May 26, 2021](https://github.com/geraldiner/magical-movies/blob/main/devlogs/2021-05-26.md))
 - [ ] Run the AI on the rest of the comments to find all the movies
 - [ ] Aggregate duplicates together and add their scores/upvotes together (since some movies are mentioned multiple times in their own comment)
 
