@@ -40960,4 +40960,23 @@ comment_ids_part16 = [
     "gwigl00",
 ]
 
-# print(len(comment_ids_part9))
+sum = (
+    len(comment_ids_part1)
+    + len(comment_ids_part2)
+    + len(comment_ids_part3)
+    + len(comment_ids_part4)
+    + len(comment_ids_part5)
+    + len(comment_ids_part6)
+    + len(comment_ids_part7)
+    + len(comment_ids_part8)
+    + len(comment_ids_part9)
+    + len(comment_ids_part10)
+    + len(comment_ids_part11)
+    + len(comment_ids_part12)
+    + len(comment_ids_part13)
+    + len(comment_ids_part14)
+    + len(comment_ids_part15)
+    + len(comment_ids_part16)
+)
+
+print(str(sum))

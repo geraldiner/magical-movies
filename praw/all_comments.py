@@ -2,5 +2,6 @@ import os
 import glob
 import json
 
-for file in glob.glob("*.json"):
-    print(file)
+for f in glob.glob("*.json"):
+    with open(f) as inFile:
+        print(len(json.load(inFile)))
