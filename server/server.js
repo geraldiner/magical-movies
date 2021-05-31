@@ -10,7 +10,7 @@ const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
 
 // Load config
-dotenv.config({ path: './config/config.env' })
+dotenv.config({ path: __dirname + '/config/config.env' })
 
 connectDB()
 
@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'development') {
 
 app.set('view engine', 'ejs')
 app.use(expressLayouts)
-app.use(express.static('public'))
+app.use(express.static('/public'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
