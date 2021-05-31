@@ -1,18 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import {
-  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import About from "./About"
+// import Home from "./Home"
+
 
 const App = () => {
   return (
     <div>
       <Switch>
-        <Route path="/">
+        {/* <Route path="/">
           <Home />
-        </Route>
+        </Route> */}
         <Route path="/about">
           <About />
         </Route>
