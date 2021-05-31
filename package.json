@@ -1,0 +1,41 @@
+{
+  "name": "magical-movies",
+  "version": "1.0.0",
+  "description": "Finding the magic in the movies suggested by Reddit",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server",
+    "dev": "cross-env NODE_ENV=development nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geraldiner/magical-movies.git"
+  },
+  "keywords": [
+    "nodejs",
+    "reactjs",
+    "fullstack",
+    "webdev"
+  ],
+  "author": "Geraldine R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geraldiner/magical-movies/issues"
+  },
+  "homepage": "https://github.com/geraldiner/magical-movies#readme",
+  "dependencies": {
+    "connect-mongo": "^4.4.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.2",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.12",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7"
+  }
+}
