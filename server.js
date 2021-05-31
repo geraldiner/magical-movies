@@ -29,8 +29,26 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
-app.get('/', (req, res) => {
-  res.render('Hello World')
-})
+app.set("trust proxy", 1)
+
+// Session middleware
+app.use(session({
+  secret: 'secret',
+  resave: false,
+  saveUninitialized: false,
+  store: MongoStore.create({
+    mongoUrl: process.env.MONGO_URI,
+    mongooseConnection: mongoose.connection
+  }),
+  cookie: {
+    sameSite: "none",
+    secure: true,
+    maxAge: 1000 * 60 * 60 * 24
+  }
+}))
+
+
+// Routes
+app.use('/', require('./routes/main'))
 
 app.listen(process.env.PORT, console.log(`Server listening on http://localhost:${process.env.PORT}`))
