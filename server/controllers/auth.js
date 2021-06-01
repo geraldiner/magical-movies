@@ -49,11 +49,7 @@ module.exports = {
     }
   },
   getSignup: (req, res) => {
-    const locals = {
-      title: 'Login',
-      layout: './layouts/main'
-    }
-    res.render('login', locals)
+    res.render(path.resolve(__dirname, '../../client/build/index.html'))
   },
   postSignup: (req, res, next) => {
     try {
