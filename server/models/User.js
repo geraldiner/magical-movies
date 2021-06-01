@@ -20,12 +20,6 @@ const UserSchema = mongoose.Schema({
   role: {
     type: Number,
     default: 0
-  },
-  token: {
-    type: String
-  },
-  tokenExp: {
-    type: Number
   }
 })
 
@@ -42,9 +36,9 @@ UserSchema.pre('save', function (next) {
       next()
     })
   })
-  let firstLetter = this.firstName.slice(0, 1).toUpperCase()
-  let restOfName = this.firstName.slice(1)
-  this.firstName = firstLetter + restOfName
+  let firstLetter = this.name.slice(0, 1).toUpperCase()
+  let restOfName = this.name.slice(1)
+  this.name = firstLetter + restOfName
 })
 
 // Helper method to validate user's password
@@ -54,4 +48,4 @@ UserSchema.methods.comparePassword = function comparePassword(plaintext, callbac
   })
 }
 
-const User = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('User', UserSchema)

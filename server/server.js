@@ -1,16 +1,19 @@
 const express = require('express')
 const session = require('express-session')
 const expressLayouts = require('express-ejs-layouts')
-
+const flash = require('express-flash')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
-
+const passport = require('passport')
 const mongoose = require('mongoose')
 const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
 
 // Load config
 dotenv.config({ path: __dirname + '/config/config.env' })
+
+// Passport config
+require(__dirname + '/config/passport')(passport)
 
 connectDB()
 
@@ -46,7 +49,11 @@ app.use(session({
     maxAge: 1000 * 60 * 60 * 24
   }
 }))
+app.use(flash())
 
+// Passport middleware
+app.use(passport.initialize())
+app.use(passport.session())
 
 // Routes
 app.use('/', require('./routes/main'))
