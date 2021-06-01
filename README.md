@@ -60,6 +60,7 @@ In addition to this, I will also add the information from the top-level Reddit c
 
 # DevLog
 
+- [May 31, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-05-31.md)
 - [May 26, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-05-26.md)
 - [May 23, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-05-23.md)
 - [May 20, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-05-20.md)
