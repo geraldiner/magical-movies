@@ -2,6 +2,7 @@ const express = require('express')
 const session = require('express-session')
 const expressLayouts = require('express-ejs-layouts')
 const flash = require('express-flash')
+const cors = require('cors')
 const dotenv = require('dotenv')
 const morgan = require('morgan')
 const passport = require('passport')
@@ -31,6 +32,14 @@ app.use(expressLayouts)
 app.use(express.static('/public'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
+
+if (process.env.NODE_ENV === 'development') {
+  app.use(cors({
+    origin: "http://localhost:3000",
+    credentials: true
+  }))
+}
+
 
 app.set("trust proxy", 1)
 
