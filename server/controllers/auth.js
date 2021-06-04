@@ -41,6 +41,7 @@ module.exports = {
           // req.flash('success', { message: 'Successful login' })
           // res.redirect(req.session.returnTo || '/snapshots')
           console.log("Successful login")
+          console.log(`auth.js Log: ${user}`)
           return res.status(200).send("Successful login")
         })
       })(req, res, next)
@@ -108,5 +109,8 @@ module.exports = {
       delete req.session
       return res.status(200).send("You've been logged out.")
     })
+  },
+  getUser: (req, res) => {
+    res.send(req.user)
   }
 }
