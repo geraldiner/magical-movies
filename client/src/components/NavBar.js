@@ -1,7 +1,17 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { Link, useHistory, useLocation } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 
 const NavBar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
+
+  console.log(user)
+
+  useEffect(() => {
+
+    setUser(JSON.parse(localStorage.getItem('profile')))
+  }, [])
 
   return (
     <nav className="bg-gray-100">

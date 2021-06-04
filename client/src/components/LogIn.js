@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import axios from 'axios'
 
 import Logo from '../assets/img/logo.svg'
@@ -10,6 +11,7 @@ const LogIn = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [data, setData] = useState(null)
+  const dispatch = useDispatch()
   const history = useHistory('')
 
   const onSubmit = async (e) => {

@@ -1,14 +1,12 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import {
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+// import { useEffect } from 'react'
+// import { useDispatch } from 'react-redux'
+
 import NavBar from "./NavBar"
-import About from "./About"
 import SignUp from "./SignUp"
 import LogIn from "./LogIn"
-// import Home from "./Home"
+import Home from "./Home"
 
 
 const App = () => {
@@ -17,18 +15,9 @@ const App = () => {
       <React.StrictMode>
         <NavBar />
         <Switch>
-          {/* <Route path="/">
-          <Home />
-        </Route> */}
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/login">
-            <LogIn />
-          </Route>
-          <Route path="/signup">
-            <SignUp />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={LogIn} />
+          <Route exact path="/signup" component={SignUp} />
         </Switch>
       </React.StrictMode>
     </BrowserRouter>
