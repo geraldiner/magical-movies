@@ -1,36 +1,20 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import axios from 'axios'
+import { loginUser } from '../actions/user'
 
 import Logo from '../assets/img/logo.svg'
-
-const LOGIN_URI = process.env.NODE_ENV !== 'production' ? 'http://localhost:8888/login' : 'https://magical-movies.herokuapp.com/login'
 
 const LogIn = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [data, setData] = useState(null)
   const dispatch = useDispatch()
   const history = useHistory('')
 
   const onSubmit = async (e) => {
     e.preventDefault()
     try {
-      let resp = await axios({
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        data: {
-          email: email,
-          password: password
-        },
-        withCredentials: true,
-        url: LOGIN_URI
-      })
-      console.log(resp)
-      setData(resp.data)
+      dispatch(loginUser(email, password))
       history.push('/')
     } catch (error) {
       console.error(error)
