@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SIGNUP_URI = process.env.NODE_ENV !== 'production' ? 'http://localhost:8888/signup' : 'https://magical-movies.herokuapp.com/login'
+const SIGNUP_URI = process.env.NODE_ENV !== 'production' ? 'http://localhost:8888/signup' : 'https://magical-movies.herokuapp.com/signup'
 
 export const SignUp = () => {
   return (
