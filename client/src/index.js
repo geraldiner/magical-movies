@@ -3,21 +3,22 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
-import reducers from './reducers'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware, compose } from 'redux'
 import promiseMiddleware from 'redux-promise'
 import thunk from 'redux-thunk'
 import promise from 'redux-promise';
 
+import reducers from './reducers'
+
 import './assets/css/tailwind.css'
 
-const store = createStore(reducers, compose(applyMiddleware(thunk)))
+// const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, thunk)(createStore)
 
 ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
+  <Provider store={createStoreWithMiddleware(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())}>
     <App />
   </Provider>,
   document.getElementById('root')

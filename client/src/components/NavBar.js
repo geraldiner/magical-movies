@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 const NavBar = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
+
   return (
     <nav className="bg-gray-100">
       <div className="px-10 py-3 mx-auto">
@@ -32,7 +36,7 @@ const NavBar = () => {
               </a>
             </div>
             {/* search */}
-            <div className="px-2 py-2 relative rounded-md">
+            <div className="hidden md:block px-2 py-2 relative rounded-md">
               <div className="absolute inset-y-0 left-2 pl-3 flex items-center pointer-events-none">
                 <button type="submit" className="text-gray-500 sm:text-sm">                <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" version="1.1"
                   viewBox="0 0 56.966 56.966"
@@ -54,13 +58,45 @@ const NavBar = () => {
           </div>
 
           {/* secondary nav */}
-          <div className="flex items-center space-x-4">
+          <div className="hidden md:flex flex items-center space-x-4">
             <a className="py-2 px-2" href="/login">Log In</a>
             <a className="py-2 px-4 bg-yellow-400 hover:bg-yellow-300 text-yellow-800 hover:text-yellow-700 rounded transition duration-300" href="/signup">Sign Up</a>
+          </div>
+
+          {/* mobile button */}
+          <div className="mobile-menu-button md:hidden flex items-center">
+            <button onClick={() => setShowMobileMenu(!showMobileMenu)}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
       {/* mobile menu */}
+      <div className={showMobileMenu ? "mobile-menu text-center px-4 py-3" : "mobile-menu text-center hidden"}>
+        <div className="px-2 py-2 relative rounded-md">
+          <div className="absolute inset-y-0 left-2 pl-3 flex items-center pointer-events-none">
+            <button type="submit" className="text-gray-500 sm:text-sm">                <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" version="1.1"
+              viewBox="0 0 56.966 56.966"
+              width="512px" height="512px">
+              <path
+                d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+            </svg>
+            </button>
+          </div>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            className="form-input w-full md:w-80 focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm border-gray-300 rounded-md pl-9"
+            placeholder="Search for a movie"
+          />
+
+        </div>
+        <a className="block py-2 px-4 bg-gray-400 hover:bg-gray-300 text-gray-800 hover:text-gray-700 rounded transition duration-300" href="/login">Log In</a>
+        <a className="block py-2 px-4 bg-yellow-400 hover:bg-yellow-300 text-yellow-800 hover:text-yellow-700 rounded transition duration-300" href="/signup">Sign Up</a>
+      </div>
     </nav>
   )
 }
