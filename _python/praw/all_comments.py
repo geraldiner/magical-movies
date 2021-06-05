@@ -1,10 +1,10 @@
-import glob
 import json
+import glob
 
-
-sum = 0
+result = []
 for f in glob.glob("*.json"):
-    with open(f,) as inFile:
-        jsonFile = json.load(inFile)
-        for comment in jsonFile:
-            print(comment["author"]["name"])
+    with open(f, "r") as infile:
+        result += json.load(infile)
+
+with open("merge.json", "w") as outfile:
+    json.dump(result, outfile)
