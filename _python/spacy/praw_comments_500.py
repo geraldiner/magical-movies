@@ -1,3 +1,5 @@
+import json
+
 comments = [
     {
         "author": {
@@ -21953,3 +21955,8 @@ comments = [
         "score": 7,
     },
 ]
+
+with open("top_500_comments.json", "w", encoding="utf-8") as outputFile:
+    outputFile.write(json.dumps(sorted(comments, key=lambda i: i["score"], reverse=True)))
+
+outputFile.close()
