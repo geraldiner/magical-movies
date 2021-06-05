@@ -20,19 +20,20 @@ nlp1 = spacy.load("./output/model-last")  # load the best model
 #         print("\tMovie found: " + ent.text)
 
 # Printing Code
-resultFile = open("movies_200.json", "w", encoding="utf-8")
+resultFile = open("movies_300.json", "w", encoding="utf-8")
 movies = []
 
-for i in range(0, 200):
-    doc = nlp1(data[i]["body"])
-    for ent in doc.ents:
-        text = data[i]["body"]
-        movie = {}
-        movie["title"] = ent.text
-        movie["comment_text"] = text
-        movie["score"] = data[i]["score"]
-        movie["comment_id"] = data[i]["comment_id"]
-        movies.append(movie)
+for i in range(0, 300):
+    if data[i]["body"] != '[deleted]':
+        doc = nlp1(data[i]["body"])
+        for ent in doc.ents:
+            text = data[i]["body"]
+            movie = {}
+            movie["title"] = ent.text
+            movie["comment_text"] = text
+            movie["score"] = data[i]["score"]
+            movie["comment_id"] = data[i]["comment_id"]
+            movies.append(movie)
 
 
 resultFile.write(json.dumps(sorted(movies, key=lambda i: i["score"], reverse=True)))
