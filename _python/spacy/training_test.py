@@ -1,15 +1,16 @@
 import spacy
-import praw_comments_500
+import top_200_comments
+import json
 
-test_sample = praw_comments_500.comments
+test_sample = top_200_comments.comments_200
 
-nlp1 = spacy.load(".\output\model-last")  # load the best model
+nlp1 = spacy.load("./output/model-last")  # load the best model
 
-resultFile = open("movies_100.json", "w")
+resultFile = open("movies_200.json", "w", encoding="utf-8")
 movies = []
 
-for i in range(0, 100):
-    doc = nlp1(test_sample[i]["body"])  # input sample text
+for i in range(0, 200):
+    doc = nlp1(test_sample[i]["body"])
     for entity in doc.ents:
         movie = {}
         movie["title"] = entity.text
@@ -17,5 +18,5 @@ for i in range(0, 100):
         movies.append(movie)
 
 
-resultFile.write(str(movies))
+resultFile.write(json.dumps(movies))
 resultFile.close()
