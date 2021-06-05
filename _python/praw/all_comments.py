@@ -19,8 +19,9 @@ import comments_sorted
 
 comments_sorted = comments_sorted.comments_sorted
 top_100 = []
-for i in range(0,200):
+for i in range(0, 200):
     top_100.append(comments_sorted[i])
+
 
 with open("top_200_comments.json", "w", encoding="utf-8") as outputFile:
     outputFile.write(json.dumps(top_100))
