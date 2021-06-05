@@ -23,14 +23,15 @@ data = json.load(json_file)
 #     newText = " ".join(tokens)
 #     item["title"] = newText
 
-movie_counts = {}
-for item in data:
-    comments = []
-    movie_title = item["title"].lower()
-    if movie_title in movie_counts:
-        movie_counts[movie_title] += 1
-    else:
-        movie_counts[movie_title] = 1
+# movie_counts = {}
+# for item in data:
+#     comments = []
+#     movie_title = item["title"].lower()
+#     if movie_title in movie_counts:
+#         movie_counts[movie_title] += 1
+#     else:
+#         movie_counts[movie_title] = 1
 
 
-print(movie_counts)
+# print(movie_counts)
+

@@ -260,6 +260,7 @@ isolate*.log
 
 # Misc
 config/config.env
+movie_data/config.env
 design
 process
 plan.txt

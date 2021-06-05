@@ -1,0 +1,16 @@
+{
+  "name": "movie_data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch_movie_data.js",
+  "scripts": {
+    "start": "node fetch_movie_data"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
+  }
+}
