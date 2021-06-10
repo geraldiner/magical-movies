@@ -1,7 +1,7 @@
 import React from 'react'
 import Movie from './Movie'
 
-const Movies = () => {
+const Movies = ({ movies }) => {
   return (
     <div className="py-10">
       <h1 className="text-4xl font-serif text-center">
@@ -9,9 +9,9 @@ const Movies = () => {
         <div className="text-2xl">-u/Feelingofsunday</div>
       </h1>
       <div className="my-5 mx-3">
-        <Movie />
-        <Movie />
-        <Movie />
+        {movies.map((movie) => (
+          <Movie movie={movie} />
+        ))}
       </div>
     </div>
   )

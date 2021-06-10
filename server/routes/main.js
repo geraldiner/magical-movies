@@ -7,6 +7,10 @@ const authController = require('../controllers/auth')
 // @route   GET /
 router.get('/', homeController.getIndex)
 
+// @desc    Get all the movies
+// @route   GET /movies
+router.get('/movies', homeController.getMovies)
+
 // @desc    Get the login page
 // @route   GET /login
 router.get('/login', authController.getLogin)
