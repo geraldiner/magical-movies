@@ -26,16 +26,16 @@ People are one of my passions - I like to know about them and their lives. For t
 
 - [x] Get all the comments+data from Reddit
   - FINALLY DONE - May 27, 2021 - That's a lot of data man.
-- [ ] Process some test cases to train AI => build training set
+- [x] Process some test cases to train AI => build training set
   - Compiled a set of 200 comments and the movie within the comment. Later I learned that I needed some false cases to help make it work better.
-- [ ] Train AI on training set
+- [x] Train AI on training set
   - Tried it with 300 comments and it seems to work OK (See results: [May 26, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-05-26.md))
 - [ ] Run the AI on the rest of the comments to find all the movies
 - [ ] Aggregate duplicates together and add their scores/upvotes together (since some movies are mentioned multiple times in their own comment)
 
 ### Build My Database
 
-- [ ] Fetch information about movies for every movie found from the Reddit thread
+- [x] Fetch information about movies for every movie found from the Reddit thread
 
 **Movie**
 
@@ -60,6 +60,7 @@ In addition to this, I will also add the information from the top-level Reddit c
 
 # DevLog
 
+- [June 9, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-06-09.md)
 - [May 31, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-05-31.md)
 - [May 26, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-05-26.md)
 - [May 23, 2021](https://github.com/geraldiner/magical-movies/blob/main/_devlogs/2021-05-23.md)
