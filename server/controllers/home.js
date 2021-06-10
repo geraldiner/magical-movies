@@ -1,9 +1,5 @@
 module.exports = {
   getIndex: (req, res) => {
-    const locals = {
-      title: 'Home',
-      layout: './layouts/main'
-    }
-    res.render('index', locals)
+    res.render(path.resolve(__dirname, '../../client/build/index.html'))
   }
 }

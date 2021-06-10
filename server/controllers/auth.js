@@ -4,11 +4,7 @@ const User = require('../models/User')
 
 module.exports = {
   getLogin: (req, res) => {
-    const locals = {
-      title: 'Login',
-      layout: './layouts/main'
-    }
-    res.render('login', locals)
+    res.render(path.resolve(__dirname, '../../client/build/index.html'))
   },
   postLogin: (req, res, next) => {
     try {
