@@ -9,9 +9,6 @@ const passport = require('passport')
 const mongoose = require('mongoose')
 const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
-const addMovies = require('./middleware/addMovies')
-
-addMovies()
 
 // Load config
 dotenv.config({ path: __dirname + '/config/config.env' })
