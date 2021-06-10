@@ -70,3 +70,11 @@
 # movies that include the year, to include or not include
 
 # Maybe I can introduce a new entity for "Actor" or "Director"
+
+# not in the themovieDB
+{
+    "title": "FernGully",
+    "comment_text": "Fern Gully*, that and Independance Day are my two big movies from when I was a kid. FG is magical and ID is badass. \n\n^^*Full ^^title; ^^FernGully: ^^The ^^Last ^^Rainforest ^^((1992)^)",
+    "score": 92,
+    "comment_id": "gvmbeml",
+},
