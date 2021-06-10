@@ -9,8 +9,8 @@ const Movies = ({ movies }) => {
         <div className="text-2xl">-u/Feelingofsunday</div>
       </h1>
       <div className="my-5 mx-3">
-        {movies.map((movie) => (
-          <Movie movie={movie} />
+        {movies.map((movie, index) => (
+          <Movie movie={movie} index={index} />
         ))}
       </div>
     </div>
