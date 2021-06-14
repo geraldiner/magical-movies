@@ -1,9 +1,9 @@
 import React from 'react'
 import Logo from '../assets/img/logo.svg'
 
-const SIGNUP_URI = process.env.NODE_ENV !== 'production' ? 'http://localhost:8888/signup' : 'https://magical-movies.herokuapp.com/signup'
+const SignUp = () => {
+  const SIGNUP_URI = process.env.NODE_ENV !== 'production' ? 'http://localhost:8888/signup' : 'https://wheresthemagic.herokuapp.com/signup'
 
-export const SignUp = () => {
   return (
     <div className="min-h-screen flex justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">

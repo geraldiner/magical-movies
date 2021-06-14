@@ -18,8 +18,8 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          {/* <Route exact path="/login" component={LogIn} />
-          <Route exact path="/signup" component={SignUp} /> */}
+          <Route exact path="/login" component={LogIn} />
+          <Route exact path="/signup" component={SignUp} />
         </Switch>
       </React.StrictMode>
     </BrowserRouter>
