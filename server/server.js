@@ -29,7 +29,10 @@ if (process.env.NODE_ENV === 'development') {
 
 app.set('view engine', 'ejs')
 app.use(expressLayouts)
-app.use(express.static('/public'))
+app.use(express.static(path.join(__dirname, 'client/build')))
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'))
+})
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
