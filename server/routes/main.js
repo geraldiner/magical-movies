@@ -35,4 +35,6 @@ router.get('/logout', authController.getLogout)
 // @route   GET /user
 router.get('/user', authController.getUser)
 
+router.use('*', homeController.getDefault);
+
 module.exports = router
