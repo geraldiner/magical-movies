@@ -1,4 +1,5 @@
 const Movie = require('../models/Movie')
+const path = require('path')
 
 module.exports = {
   getIndex: (req, res) => {

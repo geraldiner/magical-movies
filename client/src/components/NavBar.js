@@ -6,8 +6,6 @@ const NavBar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
 
-  console.log(user)
-
   useEffect(() => {
 
     setUser(JSON.parse(localStorage.getItem('profile')))

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import Movie from "./Movie";
 import axios from "axios";
@@ -10,15 +10,13 @@ const Movies = () => {
       ? "http://localhost:8888/movies"
       : "https://wheresthemagic.herokuapp.com/movies";
 
-
-  const pageSize = 10;
-
   const [movies, setMovies] = useState([]);
   const [movie, setMovie] = useState("");
-  const [foundMovies, setFoundMovies] = useState([movies]);
+  const [foundMovies, setFoundMovies] = useState([]);
 
   useEffect(() => {
     const getMovies = async () => {
+
       const res = await axios.get(MOVIES_URI);
       const data = await res.data;
       setMovies(data);
@@ -26,7 +24,6 @@ const Movies = () => {
     };
     getMovies();
   }, []);
-
 
 
   const filter = (e) => {
@@ -79,13 +76,13 @@ const Movies = () => {
           </div>
         </div>
         <div className="">
-          {foundMovies.map((movie) => (
+          {foundMovies.length > 0 ? (foundMovies.map((movie) => (
             <Movie
               key={movie.id}
               movie={movie}
               index={movies.indexOf(movie)}
             />
-          ))}
+          ))) : <h1>No movies found</h1>}
         </div>
       </div>
     </div>

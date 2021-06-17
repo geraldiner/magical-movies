@@ -2,13 +2,12 @@
   "name": "magical-movies",
   "version": "1.0.0",
   "description": "Finding the magic in the movies suggested by Reddit",
-  "main": "./server/server.js",
+  "main": "server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node server/server.js",
     "dev": "cross-env NODE_ENV=development nodemon server/server.js",
     "client": "npm start --prefix client",
-    "server": "concurrently \"npm run dev\" \"npm run client\"",
-    "heroku-postbuild": "cd client/src && npm install && npm run build"
+    "server": "concurrently \"npm run dev\" \"npm run client\""
   },
   "repository": {
     "type": "git",

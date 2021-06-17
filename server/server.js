@@ -1,3 +1,4 @@
+const path = require('path')
 const express = require('express')
 const session = require('express-session')
 const expressLayouts = require('express-ejs-layouts')
@@ -29,10 +30,8 @@ if (process.env.NODE_ENV === 'development') {
 
 app.set('view engine', 'ejs')
 app.use(expressLayouts)
-app.use(express.static(path.join(__dirname, 'client/build')))
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/client/build/index.html'))
-})
+app.use(express.static(__dirname + '/public'))
+app.use(express.static(path.resolve(__dirname, 'client/build')))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
