@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server.js",
-    "start": "cross-env NODE_ENV=production node server.js",
-    "client": "npm start --prefix ../client",
+    "dev": "cross-env NODE_ENV=development nodemon server/server.js",
+    "start": "cross-env NODE_ENV=production node server/server.js",
+    "client": "npm start --prefix client",
     "both": "concurrently \"npm run dev\" \"npm run client\"",
-    "heroku-postbuild": "npm install npm && run client"
+    "heroku-postbuild": "cd client && npm && npm install --production && npm build"
   },
   "repository": {
     "type": "git",
