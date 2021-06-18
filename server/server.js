@@ -64,8 +64,5 @@ app.use(passport.session())
 
 // Routes
 app.use('/', require('./routes/main'))
-app.get('*', (request, response) => {
-  response.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-});
 
 app.listen(process.env.PORT, console.log(`Server listening on http://localhost:${process.env.PORT}`))
