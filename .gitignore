@@ -259,8 +259,8 @@ yarn-error.log
 isolate*.log
 
 # Misc
-server/config/config.env
-movie_data/config.env
-_design
-_process
-plan.txt
+# server/config/config.env
+# movie_data/config.env
+# _design
+# _process
+# plan.txt
