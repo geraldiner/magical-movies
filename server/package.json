@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server.js",
     "start": "cross-env NODE_ENV=production node server.js",
-    "client": "npm start --prefix ./client",
-    "both": "concurrently \"npm run dev\" \"npm run client\""
+    "client": "npm start --prefix ../client",
+    "both": "concurrently \"npm run dev\" \"npm run client\"",
+    "heroku-postbuild": "npm install npm && run client"
   },
   "repository": {
     "type": "git",

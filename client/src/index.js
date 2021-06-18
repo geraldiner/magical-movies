@@ -6,9 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import "./assets/css/tailwind.css";
 
 ReactDOM.render(
-  <>
-    <App />
-  </>,
+  <App>
+  </App>,
   document.getElementById("root")
 );
 
