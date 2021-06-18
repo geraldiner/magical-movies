@@ -1,12 +1,11 @@
 import React from 'react'
-// import Movies from './Movies'
+import Movies from './Movies'
 
 
 const Home = () => {
 return (
     <div className="min-h-screen w-9/12 my-12 mx-auto bg-gray-200 sm:px-6 lg:px-8">
-      {/* <Movies /> */}
-      <h1>Hello World from the Home Page</h1>
+      <Movies />
     </div>
   )
 }
